@@ -1,0 +1,7 @@
+{
+	"file_regex": "(.+):(\\d+): error: ", // ищем строку с ошибкой в тексте файла
+	"path": "..\\..\\..\\jdk\\bin", // путь к JDK
+	"shell_cmd": "javac -cp $file_path $file -d $file_path\\..\\build", // компилируем класс java
+	"selector": "source.java", // выбор синтаксиса
+	"file_patterns": ["*.java"] // выбор типа файла
+}

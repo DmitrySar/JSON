@@ -1,0 +1,12 @@
+/*
+ * md $file_path\\src - создаём каталог src
+ * md $file_path\\build - создаём каталог build
+ * md $file_path\\out - созаём каталог out
+ * java -jar $file_path\\..\\..\\lib\\diagramToJava.jar $file $file_path\\src - создаём файлы java в каталоге src
+ * "file_patterns": ["*.txt", "*.puml", "*.uml"] - выбираем тиаы файлов
+ */
+{
+	"path": "..\\..\\jdk\\bin",
+    "shell_cmd": "md $file_path\\src && md $file_path\\build && md $file_path\\out && java -jar $file_path\\..\\..\\lib\\diagramToJava.jar $file $file_path\\src",
+    "file_patterns": ["*.txt", "*.puml", "*.uml"]
+}
